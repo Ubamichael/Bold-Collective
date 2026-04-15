@@ -1,0 +1,64 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 24px;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-section {
+  background-image: url("images/ban.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.service-card {
+  background-color: #212529; /* same as Bootstrap bg-dark/nav */
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  background-color: #1a1d20;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
